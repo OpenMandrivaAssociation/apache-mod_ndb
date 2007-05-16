@@ -5,8 +5,8 @@
 
 Summary:	An Apache module to access NDB Cluster
 Name:		apache-%{mod_name}
-Version:	254
-Release:	%mkrel 2
+Version:	320
+Release:	%mkrel 1
 Group:		System/Servers
 License:	GPL
 URL:		http://code.google.com/p/mod-ndb/
@@ -101,5 +101,3 @@ fi
 %doc Tests example-scripts example1 example2 example3 README test.conf httpd.conf Architecture.pdf LICENSE
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/httpd/modules.d/%{mod_conf}
 %attr(0755,root,root) %{_libdir}/apache-extramodules/%{mod_so}
-
-
