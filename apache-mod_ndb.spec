@@ -6,7 +6,7 @@
 Summary:	An Apache module to access NDB Cluster
 Name:		apache-%{mod_name}
 Version:	320
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Servers
 License:	GPL
 URL:		http://code.google.com/p/mod-ndb/
@@ -18,14 +18,14 @@ Requires(pre):	apache-conf >= 2.2.0
 Requires(pre):	apache >= 2.2.0
 Requires:	apache-conf >= 2.2.0
 Requires:	apache >= 2.2.0
-Requires:	MySQL-Max >= 5.0.33
-Requires:	MySQL-ndb-extra >= 5.0.33
-Requires:	MySQL-ndb-management >= 5.0.33
-Requires:	MySQL-ndb-storage >= 5.0.33
-Requires:	MySQL-ndb-tools >= 5.0.33
+Requires:	mysql-Max >= 5.0.33
+Requires:	mysql-ndb-extra >= 5.0.33
+Requires:	mysql-ndb-management >= 5.0.33
+Requires:	mysql-ndb-storage >= 5.0.33
+Requires:	mysql-ndb-tools >= 5.0.33
 BuildRequires:	apache-devel >= 2.2.0
-BuildRequires:	MySQL-devel >= 5.0.33
-BuildRequires:	MySQL-static-devel >= 5.0.33
+BuildRequires:	mysql-devel >= 5.0.33
+BuildRequires:	mysql-static-devel >= 5.0.33
 BuildRequires:	apache-ssl-devel
 BuildRequires:	file
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
