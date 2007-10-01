@@ -5,12 +5,12 @@
 
 Summary:	An Apache module to access NDB Cluster
 Name:		apache-%{mod_name}
-Version:	320
-Release:	%mkrel 2
+Version:	1.0
+Release:	%mkrel 0.rc.1
 Group:		System/Servers
 License:	GPL
 URL:		http://code.google.com/p/mod-ndb/
-Source0:	http://mod-ndb.googlecode.com/files/%{mod_name}_%{version}.tar.gz
+Source0:	http://mod-ndb.googlecode.com/files/%{mod_name}-%{version}-rc.tar.gz
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
@@ -28,6 +28,7 @@ BuildRequires:	mysql-devel >= 5.0.33
 BuildRequires:	mysql-static-devel >= 5.0.33
 BuildRequires:	apache-ssl-devel
 BuildRequires:	file
+Epoch:		1
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -43,7 +44,7 @@ that are currently not possible in MySQL) can be easily created in PHP or Perl.
 
 %prep
 
-%setup -q -n %{mod_name}
+%setup -q -n %{mod_name}-%{version}-rc
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
@@ -98,6 +99,6 @@ fi
 
 %files
 %defattr(-,root,root)
-%doc Tests example-scripts example1 example2 example3 README test.conf httpd.conf Architecture.pdf LICENSE
+%doc Tests example-scripts README test.conf httpd.conf Architecture.pdf LICENSE
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/httpd/modules.d/%{mod_conf}
 %attr(0755,root,root) %{_libdir}/apache-extramodules/%{mod_so}
