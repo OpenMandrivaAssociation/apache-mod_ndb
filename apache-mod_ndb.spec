@@ -29,6 +29,7 @@ BuildRequires:	mysql-static-devel >= 5.0.33
 BuildRequires:	apache-ssl-devel
 BuildRequires:	file
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Mod_ndb is an Apache module that provides a Web Services API for MySQL Cluster.
