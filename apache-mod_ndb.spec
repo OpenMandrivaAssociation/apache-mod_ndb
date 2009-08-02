@@ -5,12 +5,12 @@
 
 Summary:	An Apache module to access NDB Cluster
 Name:		apache-%{mod_name}
-Version:	1.0
-Release:	%mkrel 0.rc.6
+Version:	1.1
+Release:	%mkrel 0.0.r613.1
 Group:		System/Servers
 License:	GPL
 URL:		http://code.google.com/p/mod-ndb/
-Source0:	http://mod-ndb.googlecode.com/files/%{mod_name}-%{version}-rc.tar.gz
+Source0:	http://mod-ndb.googlecode.com/files/%{mod_name}-%{version}-rc-r613.tar.gz
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
