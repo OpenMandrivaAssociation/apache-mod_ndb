@@ -44,12 +44,12 @@ that are currently not possible in MySQL) can be easily created in PHP or Perl.
 
 %prep
 
-%setup -q -n %{mod_name}-%{version}-rc
+%setup -q -n %{mod_name}-%{version}-rc-r613
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
 find . -type f -perm 0444 -exec chmod 644 {} \;
-		
+
 for i in `find . -type d -name CVS` `find . -type f -name .cvs\*` `find . -type f -name .#\*`; do
     if [ -e "$i" ]; then rm -rf $i; fi >&/dev/null
 done
