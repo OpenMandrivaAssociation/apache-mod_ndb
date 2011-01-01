@@ -6,7 +6,7 @@
 Summary:	An Apache module to access NDB Cluster
 Name:		apache-%{mod_name}
 Version:	1.1
-Release:	%mkrel 0.0.r613.2
+Release:	%mkrel 0.0.r613.3
 Group:		System/Servers
 License:	GPL
 URL:		http://code.google.com/p/mod-ndb/
