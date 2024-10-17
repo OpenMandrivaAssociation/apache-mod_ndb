@@ -9,7 +9,7 @@ Version:	1.1
 Release:	%mkrel 0.0.r613.3
 Group:		System/Servers
 License:	GPL
-URL:		http://code.google.com/p/mod-ndb/
+URL:		https://code.google.com/p/mod-ndb/
 Source0:	http://mod-ndb.googlecode.com/files/%{mod_name}-%{version}-rc-r613.tar.gz
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
