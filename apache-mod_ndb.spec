@@ -23,6 +23,11 @@ Requires:	mysql-ndb-extra >= 5.0.33
 Requires:	mysql-ndb-management >= 5.0.33
 Requires:	mysql-ndb-storage >= 5.0.33
 Requires:	mysql-ndb-tools >= 5.0.33
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	mysql-devel >= 5.0.33
 BuildRequires:	mysql-static-devel >= 5.0.33
